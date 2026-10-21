@@ -1,0 +1,2806 @@
+[
+  {
+    "name": "Kvasir-SEG",
+    "aliases": [
+      "Kvasir"
+    ],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://datasets.simula.no/kvasir-seg/",
+    "num_studies": 27,
+    "studies": [
+      "Z09",
+      "Z11",
+      "Z12",
+      "Z20",
+      "Z25",
+      "Z31",
+      "Z35",
+      "Z39",
+      "Z40",
+      "Z44",
+      "Z46",
+      "Z56",
+      "Z59",
+      "Z70",
+      "Z73",
+      "Z81",
+      "Z89",
+      "Z91",
+      "Z93",
+      "Z103",
+      "Z106",
+      "Z109",
+      "Z123",
+      "Z125",
+      "Z126",
+      "Z129",
+      "Z150"
+    ]
+  },
+  {
+    "name": "CVC-ClinicDB",
+    "aliases": [
+      "ClinicDB",
+      "CVC Clinic DB",
+      "CVC-Clinic"
+    ],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://polyp.grand-challenge.org/CVCClinicDB/",
+    "num_studies": 22,
+    "studies": [
+      "Z09",
+      "Z11",
+      "Z12",
+      "Z20",
+      "Z25",
+      "Z31",
+      "Z35",
+      "Z39",
+      "Z40",
+      "Z59",
+      "Z61",
+      "Z65",
+      "Z70",
+      "Z73",
+      "Z89",
+      "Z93",
+      "Z99",
+      "Z103",
+      "Z106",
+      "Z115",
+      "Z125",
+      "Z129"
+    ]
+  },
+  {
+    "name": "ISIC2018",
+    "aliases": [
+      "ISIC 2018",
+      "ISIC-18",
+      "ISIC-2018",
+      "ISIC18"
+    ],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Public",
+    "url": "https://challenge.isic-archive.com/data/#2018",
+    "num_studies": 16,
+    "studies": [
+      "Z04",
+      "Z11",
+      "Z25",
+      "Z32",
+      "Z39",
+      "Z40",
+      "Z56",
+      "Z65",
+      "Z72",
+      "Z81",
+      "Z82",
+      "Z83",
+      "Z99",
+      "Z115",
+      "Z122",
+      "Z150"
+    ]
+  },
+  {
+    "name": "ISIC2016",
+    "aliases": [
+      "ISIC-16",
+      "ISIC16"
+    ],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Public",
+    "url": "https://challenge.isic-archive.com/data/#2016",
+    "num_studies": 14,
+    "studies": [
+      "Z03",
+      "Z04",
+      "Z07",
+      "Z25",
+      "Z32",
+      "Z43",
+      "Z57",
+      "Z69",
+      "Z122",
+      "Z125",
+      "Z126",
+      "Z130",
+      "Z141",
+      "Z149"
+    ]
+  },
+  {
+    "name": "BTCV",
+    "aliases": [
+      "Synapse"
+    ],
+    "modality": "CT",
+    "target": "Abdominal multi-organ",
+    "access": "Public",
+    "url": "https://www.synapse.org/#!Synapse:syn3193805",
+    "num_studies": 13,
+    "studies": [
+      "Z02",
+      "Z07",
+      "Z09",
+      "Z12",
+      "Z19",
+      "Z21",
+      "Z27",
+      "Z34",
+      "Z46",
+      "Z54",
+      "Z58",
+      "Z72",
+      "Z128"
+    ]
+  },
+  {
+    "name": "BraTS2021",
+    "aliases": [
+      "BraTS 2021",
+      "BraTs-2021"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://www.synapse.org/Synapse:syn25829067/wiki/610863",
+    "num_studies": 13,
+    "studies": [
+      "Z07",
+      "Z09",
+      "Z15",
+      "Z33",
+      "Z37",
+      "Z47",
+      "Z51",
+      "Z80",
+      "Z85",
+      "Z131",
+      "Z133",
+      "Z135",
+      "Z140"
+    ]
+  },
+  {
+    "name": "ISIC2017",
+    "aliases": [
+      "ISIC 2017",
+      "ISIC-2017",
+      "ISIC17"
+    ],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Public",
+    "url": "https://challenge.isic-archive.com/data/#2017",
+    "num_studies": 11,
+    "studies": [
+      "Z04",
+      "Z11",
+      "Z20",
+      "Z32",
+      "Z40",
+      "Z57",
+      "Z80",
+      "Z83",
+      "Z93",
+      "Z122",
+      "Z141"
+    ]
+  },
+  {
+    "name": "BraTS2020",
+    "aliases": [
+      "BraTS 2020",
+      "BRATS-20",
+      "Brats20"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://www.med.upenn.edu/cbica/brats2020/",
+    "num_studies": 10,
+    "studies": [
+      "Z02",
+      "Z08",
+      "Z26",
+      "Z41",
+      "Z51",
+      "Z58",
+      "Z71",
+      "Z72",
+      "Z116",
+      "Z147"
+    ]
+  },
+  {
+    "name": "ETIS-LaribPolypDB",
+    "aliases": [
+      "ETIS",
+      "ETIS-Larib",
+      "ETIS-PolypDB"
+    ],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://www.kaggle.com/datasets/fahimaislam1812/etis-laribpolypdb",
+    "num_studies": 10,
+    "studies": [
+      "Z11",
+      "Z31",
+      "Z35",
+      "Z39",
+      "Z59",
+      "Z70",
+      "Z73",
+      "Z89",
+      "Z103",
+      "Z125"
+    ]
+  },
+  {
+    "name": "BUSI",
+    "aliases": [
+      "BUS"
+    ],
+    "modality": "Ultrasound",
+    "target": "Breast lesion/tumor",
+    "access": "Public",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352340919312181",
+    "num_studies": 8,
+    "studies": [
+      "Z46",
+      "Z61",
+      "Z68",
+      "Z77",
+      "Z81",
+      "Z93",
+      "Z124",
+      "Z149"
+    ]
+  },
+  {
+    "name": "CVC-ColonDB",
+    "aliases": [
+      "ColonDB"
+    ],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://pages.cvc.uab.es/CVC-Colon/index.php/databases/",
+    "num_studies": 8,
+    "studies": [
+      "Z31",
+      "Z35",
+      "Z39",
+      "Z59",
+      "Z70",
+      "Z73",
+      "Z89",
+      "Z103"
+    ]
+  },
+  {
+    "name": "LIDC-IDRI",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Lung",
+    "access": "Public",
+    "url": "https://www.cancerimagingarchive.net/collection/lidc-idri/",
+    "num_studies": 7,
+    "studies": [
+      "Z13",
+      "Z17",
+      "Z24",
+      "Z37",
+      "Z63",
+      "Z86",
+      "Z99"
+    ]
+  },
+  {
+    "name": "PH2",
+    "aliases": [],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Public",
+    "url": "https://github.com/vikaschouhan/PH2-dataset",
+    "num_studies": 6,
+    "studies": [
+      "Z04",
+      "Z57",
+      "Z69",
+      "Z123",
+      "Z130",
+      "Z149"
+    ]
+  },
+  {
+    "name": "ACDC",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Cardiac structures",
+    "access": "Public",
+    "url": "https://www.creatis.insa-lyon.fr/Challenge/acdc/",
+    "num_studies": 5,
+    "studies": [
+      "Z19",
+      "Z34",
+      "Z61",
+      "Z95",
+      "Z148"
+    ]
+  },
+  {
+    "name": "DRIVE",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://drive.grand-challenge.org/",
+    "num_studies": 5,
+    "studies": [
+      "Z05",
+      "Z09",
+      "Z14",
+      "Z79",
+      "Z95"
+    ]
+  },
+  {
+    "name": "GlaS",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Gland/colorectal histology",
+    "access": "Public",
+    "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/",
+    "num_studies": 5,
+    "studies": [
+      "Z44",
+      "Z52",
+      "Z53",
+      "Z57",
+      "Z91"
+    ]
+  },
+  {
+    "name": "MoNuSeg",
+    "aliases": [],
+    "modality": "Microscopy",
+    "target": "Cell/nuclei",
+    "access": "Public",
+    "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/",
+    "num_studies": 5,
+    "studies": [
+      "Z38",
+      "Z52",
+      "Z66",
+      "Z75",
+      "Z130"
+    ]
+  },
+  {
+    "name": "REFUGE2",
+    "aliases": [
+      "REFUGE-2"
+    ],
+    "modality": "Fundus",
+    "target": "Optic disc/cup",
+    "access": "Public",
+    "url": "https://refuge.grand-challenge.org/Home2020/",
+    "num_studies": 6,
+    "studies": [
+      "Z07",
+      "Z12",
+      "Z33",
+      "Z51",
+      "Z115",
+      "Z150"
+    ]
+  },
+  {
+    "name": "AMOS2022",
+    "aliases": [
+      "AMOS",
+      "AMOS22"
+    ],
+    "modality": "CT/MRI",
+    "target": "Abdominal multi-organ",
+    "access": "Public",
+    "url": "https://amos22.grand-challenge.org/",
+    "num_studies": 4,
+    "studies": [
+      "Z07",
+      "Z27",
+      "Z54",
+      "Z61"
+    ]
+  },
+  {
+    "name": "BraTS2023",
+    "aliases": [
+      "BraTS23"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://www.synapse.org/brats2023",
+    "num_studies": 4,
+    "studies": [
+      "Z01",
+      "Z48",
+      "Z96",
+      "Z104"
+    ]
+  },
+  {
+    "name": "CVC-300",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://pages.cvc.uab.es/CVC-Colon/index.php/databases/",
+    "num_studies": 4,
+    "studies": [
+      "Z39",
+      "Z70",
+      "Z73",
+      "Z103"
+    ]
+  },
+  {
+    "name": "EndoScene",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://pages.cvc.uab.es/CVC-Colon/index.php/databases/",
+    "num_studies": 4,
+    "studies": [
+      "Z31",
+      "Z59",
+      "Z89",
+      "Z106"
+    ]
+  },
+  {
+    "name": "LiTS",
+    "aliases": [
+      "LiTS17"
+    ],
+    "modality": "CT",
+    "target": "Liver/tumor",
+    "access": "Public",
+    "url": "https://competitions.codalab.org/competitions/17094",
+    "num_studies": 4,
+    "studies": [
+      "Z15",
+      "Z59",
+      "Z61",
+      "Z94"
+    ]
+  },
+  {
+    "name": "MS-CMRSeg",
+    "aliases": [
+      "MSCMR"
+    ],
+    "modality": "Cardiac MRI",
+    "target": "Cardiac structures",
+    "access": "Public",
+    "url": "https://zmiclab.github.io/zxh/0/mscmrseg19/data.html",
+    "num_studies": 4,
+    "studies": [
+      "Z21",
+      "Z95",
+      "Z133",
+      "Z148"
+    ]
+  },
+  {
+    "name": "QaTa-COV19",
+    "aliases": [
+      "QaTa-COVID19"
+    ],
+    "modality": "X-ray",
+    "target": "Lung/COVID-19 lesion",
+    "access": "Public",
+    "url": "https://www.kaggle.com/datasets/aysendegerli/qatacov19-dataset",
+    "num_studies": 4,
+    "studies": [
+      "Z66",
+      "Z75",
+      "Z115",
+      "Z142"
+    ]
+  },
+  {
+    "name": "REFUGE",
+    "aliases": [
+      "REFUGE-train"
+    ],
+    "modality": "Fundus",
+    "target": "Optic disc/cup",
+    "access": "Public",
+    "url": "https://refuge.grand-challenge.org/Details/",
+    "num_studies": 4,
+    "studies": [
+      "Z03",
+      "Z10",
+      "Z40",
+      "Z149"
+    ]
+  },
+  {
+    "name": "AbdomenCT-1K",
+    "aliases": [
+      "Abdominal CT-1K"
+    ],
+    "modality": "CT",
+    "target": "Abdominal multi-organ",
+    "access": "Public",
+    "url": "https://github.com/JunMa11/AbdomenCT-1K",
+    "num_studies": 3,
+    "studies": [
+      "Z27",
+      "Z74",
+      "Z76"
+    ]
+  },
+  {
+    "name": "CHAOS",
+    "aliases": [],
+    "modality": "CT/MRI",
+    "target": "Abdominal multi-organ",
+    "access": "Public",
+    "url": "https://chaos.grand-challenge.org/",
+    "num_studies": 3,
+    "studies": [
+      "Z16",
+      "Z27",
+      "Z87"
+    ]
+  },
+  {
+    "name": "CHASE_DB1",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://researchinnovation.kingston.ac.uk/en/datasets/chasedb1-retinal-vessel-reference-dataset-4/",
+    "num_studies": 3,
+    "studies": [
+      "Z05",
+      "Z09",
+      "Z79"
+    ]
+  },
+  {
+    "name": "DSB2018",
+    "aliases": [
+      "DSB18"
+    ],
+    "modality": "Microscopy",
+    "target": "Cell/nuclei",
+    "access": "Public",
+    "url": "https://www.kaggle.com/c/data-science-bowl-2018",
+    "num_studies": 3,
+    "studies": [
+      "Z11",
+      "Z123",
+      "Z140"
+    ]
+  },
+  {
+    "name": "Kvasir-Sessile",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://datasets.simula.no/kvasir-seg/",
+    "num_studies": 3,
+    "studies": [
+      "Z44",
+      "Z91",
+      "Z123"
+    ]
+  },
+  {
+    "name": "MS-MRI",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "White matter hyperintensity",
+    "access": "Public",
+    "url": "",
+    "num_studies": 3,
+    "studies": [
+      "Z13",
+      "Z63",
+      "Z86"
+    ]
+  },
+  {
+    "name": "STARE",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://cecas.clemson.edu/~ahoover/stare/",
+    "num_studies": 3,
+    "studies": [
+      "Z05",
+      "Z14",
+      "Z79"
+    ]
+  },
+  {
+    "name": "TN3K",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Thyroid nodule",
+    "access": "Public",
+    "url": "https://github.com/haifangong/TRFE-Net-for-thyroid-nodule-segmentation",
+    "num_studies": 3,
+    "studies": [
+      "Z03",
+      "Z06",
+      "Z124"
+    ]
+  },
+  {
+    "name": "AMD-SD",
+    "aliases": [],
+    "modality": "OCT",
+    "target": "Retinal lesion",
+    "access": "Public",
+    "url": "https://www.kaggle.com/datasets/gaoweihao/amd-sd",
+    "num_studies": 2,
+    "studies": [
+      "Z77",
+      "Z137"
+    ]
+  },
+  {
+    "name": "BraTS",
+    "aliases": [
+      "BraTS (unspecified)",
+      "BraTS (version unspecified)"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 2,
+    "studies": [
+      "Z113",
+      "Z136"
+    ]
+  },
+  {
+    "name": "BraTS2019",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://isles22.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z08",
+      "Z26"
+    ]
+  },
+  {
+    "name": "BraTS2024",
+    "aliases": [
+      "BraTS 2024"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://www.synapse.org/brats2024",
+    "num_studies": 2,
+    "studies": [
+      "Z15",
+      "Z48"
+    ]
+  },
+  {
+    "name": "CHAOS-MRI",
+    "aliases": [
+      "CHAOS MRI"
+    ],
+    "modality": "MRI",
+    "target": "Abdominal organs",
+    "access": "Public",
+    "url": "https://chaos.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z21",
+      "Z128"
+    ]
+  },
+  {
+    "name": "DDTI",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Thyroid nodule",
+    "access": "Public",
+    "url": "http://cimalab.intec.co/applications/thyroid/",
+    "num_studies": 2,
+    "studies": [
+      "Z33",
+      "Z51"
+    ]
+  },
+  {
+    "name": "IOSTAR",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://www.retinacheck.org/download-iostar-retinal-vessel-segmentation-dataset",
+    "num_studies": 2,
+    "studies": [
+      "Z79",
+      "Z95"
+    ]
+  },
+  {
+    "name": "ISIC (unspecified)",
+    "aliases": [
+      "ISIC",
+      "ISIC (version unspecified)"
+    ],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Unspecified",
+    "url": "https://challenge.isic-archive.com/data/",
+    "num_studies": 2,
+    "studies": [
+      "Z16",
+      "Z46"
+    ]
+  },
+  {
+    "name": "ISLES2018",
+    "aliases": [
+      "ISLES'18"
+    ],
+    "modality": "CT perfusion",
+    "target": "Ischemic stroke lesion",
+    "access": "Public",
+    "url": "http://www.isles-challenge.org/ISLES2018/",
+    "num_studies": 2,
+    "studies": [
+      "Z58",
+      "Z98"
+    ]
+  },
+  {
+    "name": "ISLES2022",
+    "aliases": [
+      "ISLES'22"
+    ],
+    "modality": "MRI",
+    "target": "Ischemic stroke lesion",
+    "access": "Public",
+    "url": "https://isles22.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z58",
+      "Z98"
+    ]
+  },
+  {
+    "name": "KiTS2019",
+    "aliases": [
+      "KiTS19"
+    ],
+    "modality": "CT",
+    "target": "Kidney tumor",
+    "access": "Public",
+    "url": "https://kits19.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z61",
+      "Z80"
+    ]
+  },
+  {
+    "name": "KiTS2021",
+    "aliases": [
+      "KiTS21"
+    ],
+    "modality": "CT",
+    "target": "Kidney tumor",
+    "access": "Public",
+    "url": "https://kits-challenge.org/kits21/",
+    "num_studies": 2,
+    "studies": [
+      "Z41",
+      "Z94"
+    ]
+  },
+  {
+    "name": "Kvasir-Instrument",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Surgical instrument",
+    "access": "Public",
+    "url": "https://github.com/DebeshJha/Kvasir-Instrument",
+    "num_studies": 2,
+    "studies": [
+      "Z70",
+      "Z149"
+    ]
+  },
+  {
+    "name": "LUNA16",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Lung nodule",
+    "access": "Public",
+    "url": "https://luna16.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z64",
+      "Z141"
+    ]
+  },
+  {
+    "name": "MM-WHS",
+    "aliases": [],
+    "modality": "CT/MRI",
+    "target": "Cardiac structures",
+    "access": "Public",
+    "url": "https://zmiclab.github.io/zxh/0/mmwhs/",
+    "num_studies": 2,
+    "studies": [
+      "Z50",
+      "Z95"
+    ]
+  },
+  {
+    "name": "MSD (unspecified)",
+    "aliases": [
+      "MSD",
+      "MSD (task unspecified)"
+    ],
+    "modality": "CT/MRI",
+    "target": "Task unspecified",
+    "access": "Unspecified",
+    "url": "http://medicaldecathlon.com/",
+    "num_studies": 2,
+    "studies": [
+      "Z76",
+      "Z96"
+    ]
+  },
+  {
+    "name": "MSD-Brain",
+    "aliases": [
+      "BT-MSD",
+      "MSD Brain"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "http://medicaldecathlon.com/",
+    "num_studies": 2,
+    "studies": [
+      "Z64",
+      "Z74"
+    ]
+  },
+  {
+    "name": "MSD-Prostate",
+    "aliases": [
+      "MSD Prostate"
+    ],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "http://medicaldecathlon.com/",
+    "num_studies": 2,
+    "studies": [
+      "Z19",
+      "Z148"
+    ]
+  },
+  {
+    "name": "Montgomery-CXR",
+    "aliases": [
+      "MC-Xray",
+      "Montgomery"
+    ],
+    "modality": "X-ray",
+    "target": "Lung field/lesion",
+    "access": "Public",
+    "url": "",
+    "num_studies": 2,
+    "studies": [
+      "Z56",
+      "Z93"
+    ]
+  },
+  {
+    "name": "MosMedData+",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Lung",
+    "access": "Public",
+    "url": "https://mosmed.ai/datasets/covid19_1110",
+    "num_studies": 2,
+    "studies": [
+      "Z75",
+      "Z142"
+    ]
+  },
+  {
+    "name": "PROMISE12",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://promise12.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z21",
+      "Z129"
+    ]
+  },
+  {
+    "name": "PolypGen",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://www.synapse.org/Synapse:syn26376615/wiki/613312",
+    "num_studies": 2,
+    "studies": [
+      "Z73",
+      "Z129"
+    ]
+  },
+  {
+    "name": "ProstateX",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://prostatex.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z111",
+      "Z129"
+    ]
+  },
+  {
+    "name": "QUBIQ-Kidney",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Kidney",
+    "access": "Public",
+    "url": "https://qubiq.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z18",
+      "Z23"
+    ]
+  },
+  {
+    "name": "QUBIQ-Prostate",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://qubiq.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z18",
+      "Z23"
+    ]
+  },
+  {
+    "name": "STS-3D",
+    "aliases": [
+      "STS3D"
+    ],
+    "modality": "CT",
+    "target": "Dental structures",
+    "access": "Public",
+    "url": "https://zenodo.org/records/10597292",
+    "num_studies": 2,
+    "studies": [
+      "Z12",
+      "Z49"
+    ]
+  },
+  {
+    "name": "SegRap2023",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Nasopharyngeal carcinoma",
+    "access": "Public",
+    "url": "https://segrap2023.grand-challenge.org/",
+    "num_studies": 2,
+    "studies": [
+      "Z01",
+      "Z27"
+    ]
+  },
+  {
+    "name": "SegTHOR",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Thoracic organs",
+    "access": "Public",
+    "url": "https://competitions.codalab.org/competitions/21145",
+    "num_studies": 2,
+    "studies": [
+      "Z27",
+      "Z107"
+    ]
+  },
+  {
+    "name": "TotalSegmentator",
+    "aliases": [
+      "TOTAL SEGMENTATOR"
+    ],
+    "modality": "CT",
+    "target": "Multi-organ/anatomical structures",
+    "access": "Public",
+    "url": "https://github.com/wasserth/TotalSegmentator",
+    "num_studies": 2,
+    "studies": [
+      "Z27",
+      "Z50"
+    ]
+  },
+  {
+    "name": "WORD",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Abdominal multi-organ",
+    "access": "Public",
+    "url": "https://github.com/HiLab-git/WORD",
+    "num_studies": 2,
+    "studies": [
+      "Z27",
+      "Z76"
+    ]
+  },
+  {
+    "name": "134XCA",
+    "aliases": [],
+    "modality": "X-ray angiography",
+    "target": "Coronary vessel",
+    "access": "Public",
+    "url": "https://www.mdpi.com/2076-3417/9/24/5507",
+    "num_studies": 1,
+    "studies": [
+      "Z14"
+    ]
+  },
+  {
+    "name": "30XCA",
+    "aliases": [],
+    "modality": "X-ray angiography",
+    "target": "Coronary vessel",
+    "access": "Public",
+    "url": "https://www.mdpi.com/2076-3417/9/24/5507",
+    "num_studies": 1,
+    "studies": [
+      "Z14"
+    ]
+  },
+  {
+    "name": "3D-IRCADb-01",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Abdominal organs/liver lesion",
+    "access": "Public",
+    "url": "https://www.ircad.fr/research/data-sets/liver-segmentation-3d-ircadb-01/",
+    "num_studies": 1,
+    "studies": [
+      "Z126"
+    ]
+  },
+  {
+    "name": "AAIR",
+    "aliases": [],
+    "modality": "Retinal imaging",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://arxiv.org/html/2308.00193v1",
+    "num_studies": 1,
+    "studies": [
+      "Z14"
+    ]
+  },
+  {
+    "name": "ADNI",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain structures",
+    "access": "Public",
+    "url": "https://adni.loni.usc.edu/data-samples/adni-data/",
+    "num_studies": 1,
+    "studies": [
+      "Z107"
+    ]
+  },
+  {
+    "name": "AIIB2023",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Airway/lung fibrosis",
+    "access": "Public",
+    "url": "https://codalab.lisn.upsaclay.fr/competitions/13238",
+    "num_studies": 1,
+    "studies": [
+      "Z01"
+    ]
+  },
+  {
+    "name": "ATLAS",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Liver tumor",
+    "access": "Public",
+    "url": "https://atlas-challenge.u-bourgogne.fr/dataset",
+    "num_studies": 1,
+    "studies": [
+      "Z71"
+    ]
+  },
+  {
+    "name": "ATLAS-8K",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain lesion",
+    "access": "Public",
+    "url": "https://github.com/MrGiovanni/AbdomenAtlas",
+    "num_studies": 1,
+    "studies": [
+      "Z54"
+    ]
+  },
+  {
+    "name": "ATM22",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Airway",
+    "access": "Public",
+    "url": "https://atm22.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z64"
+    ]
+  },
+  {
+    "name": "AutoPET",
+    "aliases": [],
+    "modality": "PET/CT",
+    "target": "Tumor lesion",
+    "access": "Public",
+    "url": "https://autopet.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "AutoPET-II",
+    "aliases": [],
+    "modality": "PET/CT",
+    "target": "Tumor lesion",
+    "access": "Public",
+    "url": "https://autopet-ii.grand-challenge.org/dataset/",
+    "num_studies": 1,
+    "studies": [
+      "Z143"
+    ]
+  },
+  {
+    "name": "BCDM",
+    "aliases": [],
+    "modality": "Breast MRI",
+    "target": "Breast tumor",
+    "access": "Public",
+    "url": "https://zenodo.org/records/8068383",
+    "num_studies": 1,
+    "studies": [
+      "Z121"
+    ]
+  },
+  {
+    "name": "BMAD-Liver",
+    "aliases": [
+      "bmad liver"
+    ],
+    "modality": "CT",
+    "target": "Liver",
+    "access": "Public",
+    "url": "https://github.com/DorisBao/BMAD",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "BSCC",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Breast lesion/tumor",
+    "access": "Public",
+    "url": "https://github.com/PathologyDataScience/BCSS",
+    "num_studies": 1,
+    "studies": [
+      "Z82"
+    ]
+  },
+  {
+    "name": "BTD",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z77"
+    ]
+  },
+  {
+    "name": "BUS-BRA",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Breast lesion/tumor",
+    "access": "Public",
+    "url": "https://zenodo.org/records/8231412",
+    "num_studies": 1,
+    "studies": [
+      "Z84"
+    ]
+  },
+  {
+    "name": "Benign/Malignant Polyp Dataset",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://github.com/Jia7878/compositional-prompt-diffusion-for-polyp-generation",
+    "num_studies": 1,
+    "studies": [
+      "Z73"
+    ]
+  },
+  {
+    "name": "BetaSeg",
+    "aliases": [],
+    "modality": "Microscopy",
+    "target": "Organelle",
+    "access": "Public",
+    "url": "https://github.com/Jia7878/compositional-prompt-diffusion-for-polyp-generation",
+    "num_studies": 1,
+    "studies": [
+      "Z78"
+    ]
+  },
+  {
+    "name": "Bone-US",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Bone surface",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z13"
+    ]
+  },
+  {
+    "name": "BrEaST",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Breast lesion/tumor",
+    "access": "Public",
+    "url": "https://www.cancerimagingarchive.net/collection/breast-lesions-usg/",
+    "num_studies": 1,
+    "studies": [
+      "Z84"
+    ]
+  },
+  {
+    "name": "BraTS2018",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://www.med.upenn.edu/cbica/brats2018.html",
+    "num_studies": 1,
+    "studies": [
+      "Z43"
+    ]
+  },
+  {
+    "name": "BraTS2022",
+    "aliases": [
+      "BraTS 2022"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://www.synapse.org/brats2022",
+    "num_studies": 1,
+    "studies": [
+      "Z71"
+    ]
+  },
+  {
+    "name": "Breast-MRI-NACT-Pilot",
+    "aliases": [
+      "Breast MRI NACT Pilot (BMNP)"
+    ],
+    "modality": "Breast MRI",
+    "target": "Breast tumor",
+    "access": "Public",
+    "url": "https://www.cancerimagingarchive.net/collection/breast-mri-nact-pilot/",
+    "num_studies": 1,
+    "studies": [
+      "Z121"
+    ]
+  },
+  {
+    "name": "CE",
+    "aliases": [],
+    "modality": "Microscopy",
+    "target": "Cell",
+    "access": "Public",
+    "url": "https://celltrackingchallenge.net/3d-datasets/",
+    "num_studies": 1,
+    "studies": [
+      "Z30"
+    ]
+  },
+  {
+    "name": "CE-MRI",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://figshare.com/articles/brain_tumor_dataset/1512427",
+    "num_studies": 1,
+    "studies": [
+      "Z68"
+    ]
+  },
+  {
+    "name": "CHO",
+    "aliases": [],
+    "modality": "Microscopy",
+    "target": "Cell",
+    "access": "Public",
+    "url": "https://celltrackingchallenge.net/3d-datasets/",
+    "num_studies": 1,
+    "studies": [
+      "Z30"
+    ]
+  },
+  {
+    "name": "COVID-19",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Lung infection",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z77"
+    ]
+  },
+  {
+    "name": "COVID-19 CT",
+    "aliases": [],
+    "modality": "CT",
+    "target": "COVID-19 lung lesion",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z64"
+    ]
+  },
+  {
+    "name": "COVID-19 Lung CT Lesion Segmentation",
+    "aliases": [],
+    "modality": "CT",
+    "target": "COVID-19 lung lesion",
+    "access": "Public",
+    "url": "https://zenodo.org/records/3757476",
+    "num_studies": 1,
+    "studies": [
+      "Z132"
+    ]
+  },
+  {
+    "name": "COVID-19-CT100",
+    "aliases": [],
+    "modality": "CT",
+    "target": "COVID-19 lung lesion",
+    "access": "Public",
+    "url": "https://github.com/yun-liu/MiniSeg",
+    "num_studies": 1,
+    "studies": [
+      "Z65"
+    ]
+  },
+  {
+    "name": "CT-RATE",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Thoracic structures/pathology",
+    "access": "Public",
+    "url": "https://huggingface.co/datasets/ibrahimhamamci/CT-RATE",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "CT2USforKidneySeg",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Kidney",
+    "access": "Public",
+    "url": "https://github.com/SIAT-SongYuxin/CT2USforKidneySeg",
+    "num_studies": 1,
+    "studies": [
+      "Z56"
+    ]
+  },
+  {
+    "name": "CTC-HeLa",
+    "aliases": [
+      "Cell Tracking Challenge-HeLa"
+    ],
+    "modality": "Microscopy",
+    "target": "Cell",
+    "access": "Public",
+    "url": "https://celltrackingchallenge.net/2d-datasets/",
+    "num_studies": 1,
+    "studies": [
+      "Z30"
+    ]
+  },
+  {
+    "name": "CTSpine1K",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Spine/vertebrae",
+    "access": "Public",
+    "url": "https://github.com/MIRACLE-Center/CTSpine1K",
+    "num_studies": 1,
+    "studies": [
+      "Z92"
+    ]
+  },
+  {
+    "name": "CTU",
+    "aliases": [],
+    "modality": "CT urography",
+    "target": "Ureter",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z29"
+    ]
+  },
+  {
+    "name": "CXR",
+    "aliases": [],
+    "modality": "X-ray",
+    "target": "Lung",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z82"
+    ]
+  },
+  {
+    "name": "CXRS",
+    "aliases": [],
+    "modality": "X-ray",
+    "target": "Lung/COVID-19 lesion",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z137"
+    ]
+  },
+  {
+    "name": "CholecSeg8K",
+    "aliases": [],
+    "modality": "Laparoscopy",
+    "target": "Surgical scene structures",
+    "access": "Public",
+    "url": "https://www.kaggle.com/datasets/newslab/cholecseg8k",
+    "num_studies": 1,
+    "studies": [
+      "Z62"
+    ]
+  },
+  {
+    "name": "Cirr600+",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Cirrhotic liver",
+    "access": "Public",
+    "url": "https://www.kaggle.com/datasets/newslab/cholecseg8k",
+    "num_studies": 1,
+    "studies": [
+      "Z54"
+    ]
+  },
+  {
+    "name": "CoNIC",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Cell/nuclei",
+    "access": "Public",
+    "url": "https://github.com/TissueImageAnalytics/CoNIC",
+    "num_studies": 1,
+    "studies": [
+      "Z114"
+    ]
+  },
+  {
+    "name": "Colon Polyp",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z77"
+    ]
+  },
+  {
+    "name": "DLDS",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Liver tumor",
+    "access": "Public",
+    "url": "https://zenodo.org/records/7774566",
+    "num_studies": 1,
+    "studies": [
+      "Z71"
+    ]
+  },
+  {
+    "name": "DSAD",
+    "aliases": [],
+    "modality": "Laparoscopy",
+    "target": "abdominal organs",
+    "access": "Public",
+    "url": "https://zenodo.org/records/6958337",
+    "num_studies": 1,
+    "studies": [
+      "Z62"
+    ]
+  },
+  {
+    "name": "Dataset B",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Breast lesion/tumor",
+    "access": "Unspecified",
+    "url": "https://data.mendeley.com/datasets/wmy84gzngw/1",
+    "num_studies": 1,
+    "studies": [
+      "Z84"
+    ]
+  },
+  {
+    "name": "Dental Radiographs Dataset",
+    "aliases": [],
+    "modality": "Dental X-ray",
+    "target": "Dental structures",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z118"
+    ]
+  },
+  {
+    "name": "Diaphragm ultrasound",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Diaphragm",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z134"
+    ]
+  },
+  {
+    "name": "Drishti-GS",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Optic disc/cup",
+    "access": "Public",
+    "url": "https://cvit.iiit.ac.in/images/ConferencePapers/2014/MadhulikaUjjwal2013Drishti.pdf",
+    "num_studies": 1,
+    "studies": [
+      "Z10"
+    ]
+  },
+  {
+    "name": "EBHI-Seg",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Colorectal histology",
+    "access": "Public",
+    "url": "https://figshare.com/articles/dataset/EBHI-SEG/21540159",
+    "num_studies": 1,
+    "studies": [
+      "Z77"
+    ]
+  },
+  {
+    "name": "ER",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Cardiac structures",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z10"
+    ]
+  },
+  {
+    "name": "Echo",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Cardiac structures",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z53"
+    ]
+  },
+  {
+    "name": "FAscicle",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Muscle fascicle",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z134"
+    ]
+  },
+  {
+    "name": "FIVES",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://figshare.com/articles/figure/FIVES_A_Fundus_Image_Dataset_for_AI-based_Vessel_Segmentation/19688169",
+    "num_studies": 1,
+    "studies": [
+      "Z140"
+    ]
+  },
+  {
+    "name": "FLARE2022",
+    "aliases": [
+      "FLARE 2022"
+    ],
+    "modality": "CT",
+    "target": "Abdominal multi-organ",
+    "access": "Public",
+    "url": "https://flare22.grand-challenge.org/Dataset/",
+    "num_studies": 1,
+    "studies": [
+      "Z45"
+    ]
+  },
+  {
+    "name": "FP",
+    "aliases": [],
+    "modality": "Fundus photography",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://data.mendeley.com/datasets/m3kg8p8cxf/2",
+    "num_studies": 1,
+    "studies": [
+      "Z14"
+    ]
+  },
+  {
+    "name": "FeTA",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Fetal brain structures",
+    "access": "Public",
+    "url": "https://fetachallenge.github.io/",
+    "num_studies": 1,
+    "studies": [
+      "Z49"
+    ]
+  },
+  {
+    "name": "Figshare Brain Tumor (Cheng)",
+    "aliases": [
+      "Jun Cheng"
+    ],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://figshare.com/articles/dataset/brain_tumor_dataset/1512427",
+    "num_studies": 1,
+    "studies": [
+      "Z08"
+    ]
+  },
+  {
+    "name": "Fundus dataset (unspecified)",
+    "aliases": [
+      "Fundus",
+      "Fundus datasets (unspecified)"
+    ],
+    "modality": "Fundus",
+    "target": "Retinal structure",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z16"
+    ]
+  },
+  {
+    "name": "GOWT1",
+    "aliases": [],
+    "modality": "Microscopy",
+    "target": "Cell",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z30"
+    ]
+  },
+  {
+    "name": "GSBD",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Gallbladder/lesion",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z124"
+    ]
+  },
+  {
+    "name": "H&N CT-PET",
+    "aliases": [],
+    "modality": "PET/CT",
+    "target": "Head-and-neck tumor",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z133"
+    ]
+  },
+  {
+    "name": "HAM10000",
+    "aliases": [],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Public",
+    "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FDBW86T",
+    "num_studies": 1,
+    "studies": [
+      "Z97"
+    ]
+  },
+  {
+    "name": "HECKTOR2022",
+    "aliases": [],
+    "modality": "PET/CT",
+    "target": "Head-and-neck tumor",
+    "access": "Public",
+    "url": "https://hecktor.grand-challenge.org/Data/",
+    "num_studies": 1,
+    "studies": [
+      "Z143"
+    ]
+  },
+  {
+    "name": "HN",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Nuclei",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z52"
+    ]
+  },
+  {
+    "name": "HRF",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://www5.cs.fau.de/research/data/fundus-images/",
+    "num_studies": 1,
+    "studies": [
+      "Z79"
+    ]
+  },
+  {
+    "name": "HaN-Seg",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Head-and-neck organs",
+    "access": "Public",
+    "url": "https://zenodo.org/records/7442914",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "HeiSurf",
+    "aliases": [],
+    "modality": "Laparoscopy",
+    "target": "Surgical scene structures",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z62"
+    ]
+  },
+  {
+    "name": "Hip",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Hippocampus",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z41"
+    ]
+  },
+  {
+    "name": "HyperKvasir",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp/GI lesion",
+    "access": "Public",
+    "url": "https://datasets.simula.no/hyper-kvasir/",
+    "num_studies": 1,
+    "studies": [
+      "Z109"
+    ]
+  },
+  {
+    "name": "I2CVB",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://i2cvb.github.io/",
+    "num_studies": 1,
+    "studies": [
+      "Z21"
+    ]
+  },
+  {
+    "name": "INSTANCE2022",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Intracranial hemorrhage",
+    "access": "Public",
+    "url": "https://github.com/PerceptionComputingLab/INSTANCE2022",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "ISIC-GPT",
+    "aliases": [],
+    "modality": "Dermoscopy",
+    "target": "Skin lesion",
+    "access": "Public",
+    "url": "https://github.com/JaspinXu/SkinDualGen",
+    "num_studies": 1,
+    "studies": [
+      "Z97"
+    ]
+  },
+  {
+    "name": "ISLES2015",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Ischemic stroke lesion",
+    "access": "Public",
+    "url": "https://www.isles-challenge.org/ISLES2015/",
+    "num_studies": 1,
+    "studies": [
+      "Z58"
+    ]
+  },
+  {
+    "name": "ISLES2017",
+    "aliases": [
+      "ISLES'17"
+    ],
+    "modality": "MRI",
+    "target": "Ischemic stroke lesion",
+    "access": "Public",
+    "url": "https://www.isles-challenge.org/ISLES2017/",
+    "num_studies": 1,
+    "studies": [
+      "Z98"
+    ]
+  },
+  {
+    "name": "Infarct AISD",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Ischemic stroke lesion",
+    "access": "Public",
+    "url": "https://github.com/GriffinLiang/AISD",
+    "num_studies": 1,
+    "studies": [
+      "Z42"
+    ]
+  },
+  {
+    "name": "KiTS2023",
+    "aliases": [
+      "KiTS23"
+    ],
+    "modality": "CT",
+    "target": "Kidney tumor",
+    "access": "Public",
+    "url": "https://kits-challenge.org/kits23/",
+    "num_studies": 1,
+    "studies": [
+      "Z96"
+    ]
+  },
+  {
+    "name": "Knee",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Knee cartilage",
+    "access": "Public",
+    "url": "https://github.com/FahimZaman/LDSeg",
+    "num_studies": 1,
+    "studies": [
+      "Z53"
+    ]
+  },
+  {
+    "name": "Lucchi++",
+    "aliases": [],
+    "modality": "Microscopy",
+    "target": "Mitochondria",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z78"
+    ]
+  },
+  {
+    "name": "M&Ms",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Cardiac structures",
+    "access": "Public",
+    "url": "https://www.ub.edu/mnms/",
+    "num_studies": 1,
+    "studies": [
+      "Z10"
+    ]
+  },
+  {
+    "name": "MNIST",
+    "aliases": [],
+    "modality": "Synthetic/non-medical",
+    "target": "Digit segmentation",
+    "access": "Non-medical benchmark",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z95"
+    ]
+  },
+  {
+    "name": "MPLiTS",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Liver tumor",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z119"
+    ]
+  },
+  {
+    "name": "MS-Lesion",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Multiple sclerosis lesion",
+    "access": "Public",
+    "url": "https://smart-stats-tools.org/lesion-challenge",
+    "num_studies": 1,
+    "studies": [
+      "Z17"
+    ]
+  },
+  {
+    "name": "MSD-Colon",
+    "aliases": [],
+    "modality": "CT",
+    "target": "colon cancer",
+    "access": "Public",
+    "url": "https://medicaldecathlon.com/dataaws/",
+    "num_studies": 1,
+    "studies": [
+      "Z94"
+    ]
+  },
+  {
+    "name": "MSD-Hippocampus",
+    "aliases": [
+      "MSD Hippocampus"
+    ],
+    "modality": "MRI",
+    "target": "Hippocampus",
+    "access": "Public",
+    "url": "https://medicaldecathlon.com/dataaws/",
+    "num_studies": 1,
+    "studies": [
+      "Z15"
+    ]
+  },
+  {
+    "name": "MSD-Lung",
+    "aliases": [
+      "MSD Lung"
+    ],
+    "modality": "CT",
+    "target": "Lung tumor",
+    "access": "Public",
+    "url": "https://medicaldecathlon.com/dataaws/",
+    "num_studies": 1,
+    "studies": [
+      "Z140"
+    ]
+  },
+  {
+    "name": "MSD-Lung-Liver-LN",
+    "aliases": [
+      "msd-lung-ln-liver-ln"
+    ],
+    "modality": "CT",
+    "target": "Lung/liver lesion and lymph node",
+    "access": "Public",
+    "url": "https://medicaldecathlon.com/dataaws/",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "MSD-Pancreas",
+    "aliases": [
+      "MSD Pancreas"
+    ],
+    "modality": "CT",
+    "target": "Pancreas",
+    "access": "Public",
+    "url": "https://medicaldecathlon.com/dataaws/",
+    "num_studies": 1,
+    "studies": [
+      "Z94"
+    ]
+  },
+  {
+    "name": "MSD04-08",
+    "aliases": [],
+    "modality": "CT/MRI",
+    "target": "Multi-organ",
+    "access": "Public",
+    "url": "https://medicaldecathlon.com/dataaws/",
+    "num_studies": 1,
+    "studies": [
+      "Z132"
+    ]
+  },
+  {
+    "name": "Mayo Clinic 2016",
+    "aliases": [
+      "mayo 2016"
+    ],
+    "modality": "CT",
+    "target": "Abdominal/thoracic structures",
+    "access": "Public",
+    "url": "https://www.aapm.org/grandchallenge/lowdosect/",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "MedMNIST",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Brain anomaly",
+    "access": "Public",
+    "url": "https://medmnist.com/",
+    "num_studies": 1,
+    "studies": [
+      "Z88"
+    ]
+  },
+  {
+    "name": "MoNuSAC",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Nuclei",
+    "access": "Public",
+    "url": "https://monusac-2020.grand-challenge.org/Data/",
+    "num_studies": 1,
+    "studies": [
+      "Z114"
+    ]
+  },
+  {
+    "name": "NCI-ISBI 2013",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://wiki.cancerimagingarchive.net/pages/viewpage.action?navigatingVersions=true&pageId=22517734",
+    "num_studies": 1,
+    "studies": [
+      "Z21"
+    ]
+  },
+  {
+    "name": "NIH Pancreas-CT",
+    "aliases": [
+      "NIH"
+    ],
+    "modality": "CT",
+    "target": "Pancreas",
+    "access": "Public",
+    "url": "https://www.cancerimagingarchive.net/collection/pancreas-ct/",
+    "num_studies": 1,
+    "studies": [
+      "Z76"
+    ]
+  },
+  {
+    "name": "NPC-170",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Nasopharyngeal carcinoma",
+    "access": "Public",
+    "url": "https://github.com/ycwu1997/D-Persona",
+    "num_studies": 1,
+    "studies": [
+      "Z24"
+    ]
+  },
+  {
+    "name": "Nuclei dataset (unspecified)",
+    "aliases": [
+      "Nuclei",
+      "Nuclei datasets (unspecified)"
+    ],
+    "modality": "Histopathology/Microscopy",
+    "target": "Nuclei",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z16"
+    ]
+  },
+  {
+    "name": "OASIS",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain structures",
+    "access": "Public",
+    "url": "https://sites.wustl.edu/oasisbrains/",
+    "num_studies": 1,
+    "studies": [
+      "Z107"
+    ]
+  },
+  {
+    "name": "ORIGA",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Optic disc/cup",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z10"
+    ]
+  },
+  {
+    "name": "OSS-C",
+    "aliases": [
+      "OSSI/OSS-C"
+    ],
+    "modality": "Ultra-high-resolution CT",
+    "target": "Ossicles",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z102"
+    ]
+  },
+  {
+    "name": "PICCOLO",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "https://zenodo.org/records/4279017",
+    "num_studies": 1,
+    "studies": [
+      "Z20"
+    ]
+  },
+  {
+    "name": "PanNuke",
+    "aliases": [],
+    "modality": "Histopathology",
+    "target": "Nuclei",
+    "access": "Public",
+    "url": "https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke/",
+    "num_studies": 1,
+    "studies": [
+      "Z114"
+    ]
+  },
+  {
+    "name": "PanSegData",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Pancreas",
+    "access": "Public",
+    "url": "https://osf.io/kysnj/overview",
+    "num_studies": 1,
+    "studies": [
+      "Z54"
+    ]
+  },
+  {
+    "name": "Polyp dataset (unspecified)",
+    "aliases": [
+      "Polyp",
+      "Polyps",
+      "Polyp datasets (unspecified)"
+    ],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z16"
+    ]
+  },
+  {
+    "name": "Polyplus",
+    "aliases": [
+      "Polyplus (private)"
+    ],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Private",
+    "url": "https://github.com/Jia7878/compositional-prompt-diffusion-for-polyp-generation",
+    "num_studies": 1,
+    "studies": [
+      "Z73"
+    ]
+  },
+  {
+    "name": "Private CT/MR spine dataset",
+    "aliases": [],
+    "modality": "CT/MRI",
+    "target": "Spine/vertebrae",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z92"
+    ]
+  },
+  {
+    "name": "Private NPC-LES dataset",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Nasopharyngeal carcinoma",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z20"
+    ]
+  },
+  {
+    "name": "Private endoscopy dataset",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z35"
+    ]
+  },
+  {
+    "name": "Private infarct CT dataset",
+    "aliases": [
+      "Private Infarct"
+    ],
+    "modality": "CT",
+    "target": "Ischemic stroke lesion",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z42"
+    ]
+  },
+  {
+    "name": "Private intraoral ultrasound dental dataset",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Dental/periodontal structures",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z36"
+    ]
+  },
+  {
+    "name": "Private invasive breast cancer dataset",
+    "aliases": [
+      "self-constructed invasive breast cancer dataset"
+    ],
+    "modality": "Unspecified",
+    "target": "Invasive breast cancer",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z131"
+    ]
+  },
+  {
+    "name": "Private multi-phase CT liver tumor dataset",
+    "aliases": [
+      "internal/external multi-phase CT liver tumor datasets"
+    ],
+    "modality": "CT",
+    "target": "Liver tumor",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z119"
+    ]
+  },
+  {
+    "name": "Private pancreas CT dataset",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Pancreas",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z64"
+    ]
+  },
+  {
+    "name": "Private pelvic MRI dataset",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Pelvic tumor/structures",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z71"
+    ]
+  },
+  {
+    "name": "Private thyroid ultrasound dataset",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Thyroid nodule",
+    "access": "Private",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z06"
+    ]
+  },
+  {
+    "name": "Prostate-MRI-US-Biopsy",
+    "aliases": [],
+    "modality": "Ultrasound/TRUS",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/",
+    "num_studies": 1,
+    "studies": [
+      "Z55"
+    ]
+  },
+  {
+    "name": "Prostate158",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://zenodo.org/records/6481141",
+    "num_studies": 1,
+    "studies": [
+      "Z129"
+    ]
+  },
+  {
+    "name": "Public-Thor",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Thoracic organs",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z107"
+    ]
+  },
+  {
+    "name": "QUBIQ-Brain growth",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain growth",
+    "access": "Public",
+    "url": "https://qubiq.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z23"
+    ]
+  },
+  {
+    "name": "QUBIQ-Brain tumor",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain tumor",
+    "access": "Public",
+    "url": "https://qubiq.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z23"
+    ]
+  },
+  {
+    "name": "QUBIQ-Pancreatic lesion",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Pancreatic lesion",
+    "access": "Public",
+    "url": "https://qubiq.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z23"
+    ]
+  },
+  {
+    "name": "RIGA",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Optic disc/cup",
+    "access": "Public",
+    "url": "https://deepblue.lib.umich.edu/data/concern/data_sets/3b591905z",
+    "num_studies": 1,
+    "studies": [
+      "Z18"
+    ]
+  },
+  {
+    "name": "RIM-ONE",
+    "aliases": [],
+    "modality": "Fundus",
+    "target": "Optic disc/cup",
+    "access": "Public",
+    "url": "https://github.com/miag-ull/rim-one-dl",
+    "num_studies": 1,
+    "studies": [
+      "Z10"
+    ]
+  },
+  {
+    "name": "ROSE-1",
+    "aliases": [],
+    "modality": "OCTA",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "https://github.com/iMED-Lab/OCTA-Net-OCTA-Vessel-Segmentation-Network",
+    "num_studies": 1,
+    "studies": [
+      "Z83"
+    ]
+  },
+  {
+    "name": "RPLHR-CT",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Abdominal/thoracic structures",
+    "access": "Public",
+    "url": "https://github.com/smilenaxx/RPLHR-CT",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "SUN-SEG",
+    "aliases": [],
+    "modality": "Endoscopy",
+    "target": "Polyp",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z31"
+    ]
+  },
+  {
+    "name": "StructSeg",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Multi-organ",
+    "access": "Public",
+    "url": "https://structseg2019.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z27"
+    ]
+  },
+  {
+    "name": "StructSeg-Thorax",
+    "aliases": [],
+    "modality": "CT",
+    "target": "Thoracic organs",
+    "access": "Public",
+    "url": "https://structseg2019.grand-challenge.org/",
+    "num_studies": 1,
+    "studies": [
+      "Z107"
+    ]
+  },
+  {
+    "name": "TBI-CT-FLAIR",
+    "aliases": [],
+    "modality": "CT/MRI",
+    "target": "Brain lesion",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z133"
+    ]
+  },
+  {
+    "name": "TM50",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Muscle/diaphragm",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z134"
+    ]
+  },
+  {
+    "name": "TNMIX",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Thyroid nodule",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z07"
+    ]
+  },
+  {
+    "name": "TOF-MRA",
+    "aliases": [],
+    "modality": "MRA",
+    "target": "Cerebral vessel",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z101"
+    ]
+  },
+  {
+    "name": "TTE",
+    "aliases": [],
+    "modality": "Echocardiography",
+    "target": "Cardiac structures",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z100"
+    ]
+  },
+  {
+    "name": "UK Biobank",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "Brain anomaly/white matter lesion",
+    "access": "Public",
+    "url": "https://biobank.ndph.ox.ac.uk/ukb/help.cgi?cd=secure_repository",
+    "num_studies": 1,
+    "studies": [
+      "Z88"
+    ]
+  },
+  {
+    "name": "USI",
+    "aliases": [],
+    "modality": "Ultrasound",
+    "target": "Unspecified lesion/organ",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z11"
+    ]
+  },
+  {
+    "name": "UWF",
+    "aliases": [],
+    "modality": "Ultra-widefield fundus",
+    "target": "Retinal vessel",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z14"
+    ]
+  },
+  {
+    "name": "Ultrasound thyroid nodule dataset (unspecified)",
+    "aliases": [
+      "Ultrasound thyroid nodule"
+    ],
+    "modality": "Ultrasound",
+    "target": "Thyroid nodule",
+    "access": "Unspecified",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z131"
+    ]
+  },
+  {
+    "name": "WMH",
+    "aliases": [],
+    "modality": "MRI",
+    "target": "White matter hyperintensity",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z41"
+    ]
+  },
+  {
+    "name": "Willis ring vessel dataset",
+    "aliases": [],
+    "modality": "Angiographic imaging",
+    "target": "Cerebral vessel",
+    "access": "Public",
+    "url": "",
+    "num_studies": 1,
+    "studies": [
+      "Z136"
+    ]
+  },
+  {
+    "name": "XCAD",
+    "aliases": [],
+    "modality": "X-ray angiography",
+    "target": "Coronary vessel",
+    "access": "Public",
+    "url": "https://github.com/AISIGSJTU/SSVS",
+    "num_studies": 1,
+    "studies": [
+      "Z14"
+    ]
+  },
+  {
+    "name": "μRegPro",
+    "aliases": [],
+    "modality": "Ultrasound/TRUS",
+    "target": "Prostate",
+    "access": "Public",
+    "url": "https://muregpro.github.io/",
+    "num_studies": 1,
+    "studies": [
+      "Z55"
+    ]
+  }
+]

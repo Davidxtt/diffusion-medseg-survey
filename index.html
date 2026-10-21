@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Roles of Diffusion Models in Medical Image Segmentation: A Survey</title>
+<meta name="description" content="Searchable index of the studies reviewed in the survey.">
+<style>
+:root{
+  --band:#111a20; --band-soft:#9fb0ba; --page:#f2f4f5; --surface:#ffffff;
+  --ink:#111a20; --muted:#59646e; --rule:#e2e7ea; --rule-strong:#c9d2d8;
+  --accent:#146b7a;
+  --r1:#2763a6; --r2:#a66320; --r3:#467d37; --r4:#7950aa;
+  --sans:ui-sans-serif,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);
+  font-size:13.5px;line-height:1.5;font-variant-numeric:tabular-nums}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(20,107,122,.35)}
+a:hover{border-bottom-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--band);color:#eef2f4;text-align:center;padding:74px 22px 60px}
+.hero h1{max-width:1520px;margin:0 auto;font-size:clamp(28px,3.5vw,46px);line-height:1.15;font-weight:700;letter-spacing:-.028em;
+  white-space:normal;text-wrap:balance}
+.hero .authors{margin:22px auto 0;font-size:18px;line-height:1.8;color:#eef2f4}
+.hero .authors sup{font-size:.7em}
+.hero .affiliations{margin:10px auto 0;line-height:1.75;color:var(--band-soft)}
+.hero .abstract{width:calc(100% - 24px);max-width:980px;margin:30px auto 0}
+.hero .abstract h2{margin:0 0 14px;font-size:20px;font-weight:600}
+.hero p{margin:0;max-width:none;font-size:14.5px;line-height:1.75;color:var(--band-soft);
+  text-align:justify;text-justify:inter-word;hyphens:auto}
+.searchwrap{margin:34px auto 0;max-width:480px}
+.hero input{width:100%;font:inherit;font-size:14px;color:#eef2f4;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:10px 13px}
+.hero input::placeholder{color:#7e8d97}
+.hero input:focus{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5);outline:none}
+/* one deliberate flourish: grain resolving into a solid line, the shape of the reverse process */
+.seam{height:5px;background:var(--accent)}
+.seam::before{content:"";display:block;height:5px;
+  background:repeating-linear-gradient(90deg,var(--band) 0 2px,transparent 2px 4px,var(--band) 4px 5px,transparent 5px 9px);
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,transparent 62%);
+  mask-image:linear-gradient(90deg,#000 0%,transparent 62%)}
+
+/* ---------- filters ---------- */
+.wrap.cols{max-width:1300px}
+.cols{display:grid;grid-template-columns:206px minmax(0,1fr);gap:52px;padding:26px 0 0;align-items:start}
+.rail{position:sticky;top:14px;margin-top:68px;max-height:calc(100vh - 28px);overflow:auto;padding-right:2px}
+.fgroup{border-top:1px solid var(--rule);padding:14px 0 2px}
+.fgroup:first-child{border-top:0;padding-top:0}
+.fgroup h3{margin:0 0 9px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.rail .chip{display:block;width:100%;text-align:left}
+.chip{border:1px solid var(--rule-strong);background:var(--surface);border-radius:2px;padding:4px 9px;
+  font:inherit;font-size:12.5px;color:var(--muted);cursor:pointer}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.status{display:flex;justify-content:space-between;align-items:center;gap:16px;
+  min-height:24px;color:var(--muted);font-size:12.5px;padding:0 0 12px}
+.linkish{background:none;border:0;padding:0;font:inherit;font-size:12.5px;color:var(--accent);cursor:pointer;
+  border-bottom:1px solid rgba(20,107,122,.35)}
+
+/* ---------- table ---------- */
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--rule);
+  margin-bottom:56px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{position:sticky;top:0;background:var(--surface);border-bottom:1px solid var(--rule-strong);
+  font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap;z-index:1}
+th button{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer}
+th button[data-active="1"]{color:var(--ink)}
+td.num{text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:center}
+/* 第一类：浅蓝 */
+#fRole .chip[data-role="0"],
+tr.row[data-role="0"],
+tr.row[data-role="0"] + tr.detail{
+  --role-accent:var(--r1);
+  --role-bg:#e6effb;
+  --role-hover:#dceafa;
+  --role-detail:#f0f5fc;
+}
+
+/* 第二类：浅橙 */
+#fRole .chip[data-role="1"],
+tr.row[data-role="1"],
+tr.row[data-role="1"] + tr.detail{
+  --role-accent:var(--r2);
+  --role-bg:#fdefe1;
+  --role-hover:#fde7d2;
+  --role-detail:#fff6ed;
+}
+
+/* 第三类：浅绿 */
+#fRole .chip[data-role="2"],
+tr.row[data-role="2"],
+tr.row[data-role="2"] + tr.detail{
+  --role-accent:var(--r3);
+  --role-bg:#e7f3e4;
+  --role-hover:#ddefd9;
+  --role-detail:#f1f8ef;
+}
+
+/* 第四类：浅紫 */
+#fRole .chip[data-role="3"],
+tr.row[data-role="3"],
+tr.row[data-role="3"] + tr.detail{
+  --role-accent:var(--r4);
+  --role-bg:#f2eafb;
+  --role-hover:#ece0f8;
+  --role-detail:#f7f2fc;
+}
+#fRole .chip{background:var(--role-bg);color:var(--ink);border-left:3px solid var(--role-accent);
+  line-height:1.5;padding:7px 9px}
+#fRole .chip:hover{border-color:var(--role-accent)}
+#fRole .chip[aria-pressed="true"]{background:var(--role-bg);color:var(--ink);
+  border-color:var(--role-accent);box-shadow:inset 0 0 0 1px var(--role-accent);font-weight:600}
+a.tag{background:#e8f5e9;color:#25633b;border-color:#b7d9bf;
+  text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+a.tag:hover,a.tag:focus-visible{background:#d7eddb;color:#174d2a;border-color:#78ad87}
+tr.row{background:var(--role-bg,#e5e9ec)}
+tr.row:hover{background:var(--role-hover,#d8dfe4)}
+tr.row td:first-child{border-left:3px solid transparent}
+tr.row[data-role="0"] td:first-child{border-left-color:var(--r1)}
+tr.row[data-role="1"] td:first-child{border-left-color:var(--r2)}
+tr.row[data-role="2"] td:first-child{border-left-color:var(--r3)}
+tr.row[data-role="3"] td:first-child{border-left-color:var(--r4)}
+.model{background:none;border:0;padding:0;font:inherit;font-size:13.5px;font-weight:600;color:var(--ink);
+  cursor:pointer;text-align:left;text-decoration-line:underline;text-decoration-thickness:1px;
+  text-underline-offset:3px;text-decoration-skip-ink:auto}
+.model:hover,.model:focus-visible{color:var(--accent);text-decoration-thickness:2px}
+.role{max-width:232px}
+.sub{color:var(--muted);font-size:12px}
+.detail td{background:var(--role-detail,#edf0f2);border-bottom:1px solid var(--rule-strong)}
+.dl{display:grid;grid-template-columns:96px minmax(0,1fr);gap:5px 16px;margin:2px 0}
+.dl dt{color:var(--muted);font-size:12px}
+.dl dd{margin:0;max-width:96ch}
+.tag{display:inline-block;border:1px solid var(--rule-strong);border-radius:2px;padding:1px 7px;
+  margin:2px 5px 2px 0;font-size:11.5px;background:var(--surface);color:var(--muted)}
+.empty{padding:44px 12px;text-align:center;color:var(--muted);background:var(--surface);
+  border:1px solid var(--rule);margin-bottom:56px}
+.empty b{display:block;color:var(--ink);margin-bottom:5px;font-size:14px}
+.cite{border-top:1px solid var(--rule);padding:30px 0 6px}
+.cite h2{margin:0 0 6px;font-size:15px;font-weight:600}
+.cite p{margin:0 0 14px;color:var(--muted);max-width:70ch}
+.cite pre{margin:0;background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);
+  border-radius:2px;padding:14px 16px;overflow-x:auto;font-size:12.5px;line-height:1.6;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink)}
+footer{border-top:1px solid var(--rule);color:var(--muted);font-size:12.5px;padding:18px 0 44px}
+.hidden{display:none !important}
+@media (max-width:820px){
+  .hero{padding:52px 14px 44px}
+  .hero .authors{font-size:16px}
+  .cols{grid-template-columns:1fr;gap:16px}
+  .rail{position:static;margin-top:0;max-height:none;border-bottom:1px solid var(--rule);padding-bottom:12px}
+  .rail .chip{display:inline-block;width:auto}
+  th:nth-child(5),td:nth-child(5),th:nth-child(6),td:nth-child(6),th:nth-child(7),td:nth-child(7){display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>The Roles of Diffusion Models in Medical Image Segmentation: A Survey</h1>
+  <div class="authors">
+    Tongtong Xie<sup>a</sup>,
+    Hongshan Yu<sup>a,*</sup>,
+    Yan Zheng<sup>a</sup>,
+    Yong He<sup>b</sup>,
+    and Zechuan Li<sup>c</sup>
+  </div>
+  <div class="affiliations">
+    <div>
+      <sup>a</sup> School of Artificial Intelligence and Robotics,
+      Hunan University, Changsha, 410012, China
+    </div>
+    <div>
+      <sup>b</sup> School of Artificial Intelligence,
+      Anhui University, Hefei, 230601, China
+    </div>
+    <div>
+      <sup>c</sup> School of Computer and Artificial Intelligence,
+      Zhengzhou University, Zhengzhou, 450001, China
+    </div>
+  </div>
+
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      Diffusion models support medical image segmentation through diverse
+      functional roles, yet existing surveys often emphasize technical
+      characteristics rather than how these models contribute to segmentation.
+      This survey reviews more than 130 studies through a role-oriented
+      taxonomy covering direct generative segmentation, prediction refinement
+      and correction, representation learning and feature enhancement, and
+      data synthesis and augmentation. We compare modeling strategies and key
+      design choices, summarize applications, datasets, and evaluation practices,
+      and examine gaps in assessing predictive uncertainty, sampling stability,
+      conditional consistency, and synthetic-data utility. Finally, we discuss
+      open challenges and future directions for efficient, generalizable, and
+      reliable diffusion-based segmentation.
+    </p>
+  </div>
+  <div class="searchwrap">
+    <input type="search" id="q" placeholder="Search a method, title, venue, dataset or metric" aria-label="Search studies">
+  </div>
+</div>
+<div class="seam"></div>
+
+<div class="wrap cols">
+  <aside class="rail">
+    <div class="fgroup">
+      <h3>Role</h3>
+      <div class="chips" id="fRole" aria-label="Filter by functional role"></div>
+    </div>
+    <div class="fgroup">
+      <h3>Imaging modality</h3>
+      <div class="chips" id="fMod"></div>
+    </div>
+    <div class="fgroup">
+      <h3>Segmentation target</h3>
+      <div class="chips" id="fTgt"></div>
+    </div>
+  </aside>
+  <main>
+    <div class="status">
+      <span id="status"></span>
+      <button class="linkish hidden" id="clear">Clear filters</button>
+    </div>
+    <div id="view"></div>
+  </main>
+</div>
+
+<div class="wrap">
+  <section class="cite">
+    <h2>Citation</h2>
+    <p>If you find this survey or its companion resources useful, please cite the manuscript.</p>
+<pre>@misc{xie2026roles,
+  title  = {The Roles of Diffusion Models in Medical Image Segmentation: A Survey},
+  author = {Xie, Tongtong and Yu, Hongshan and Zheng, Yan and He, Yong and Li, Zechuan},
+  year   = {2026},
+  note   = {Unpublished manuscript}
+}</pre>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  Params, GFLOPs and GPUs are the values stated by each original paper; setups and input sizes differ, so they
+  indicate scale rather than a like-for-like comparison.
+</div></footer>
+
+<script>
+const MAPS = {"modality":{"MRI":["MRI"],"Breast MRI":["MRI"],"Cardiac MRI":["MRI"],"MRA":["MRI"],"CT/MRI":["MRI","CT"],"CT":["CT"],"CT perfusion":["CT"],"CT urography":["CT"],"Ultra-high-resolution CT":["CT"],"Endoscopy":["Endoscopy"],"Dermoscopy":["Dermoscopy"],"Ultrasound":["Ultrasound"],"Ultrasound/TRUS":["Ultrasound"],"Echocardiography":["Ultrasound"],"Histopathology":["Histopathology/Microscopy"],"Microscopy":["Histopathology/Microscopy"],"Histopathology/Microscopy":["Histopathology/Microscopy"],"Fundus":["Fundus"],"X-ray":["X-ray"],"Dental X-ray":["X-ray"],"X-ray angiography":["X-ray"],"PET/CT":["Others"],"OCT":["Others"],"OCTA":["Others"],"Retinal imaging":["Others"],"Ultra-widefield fundus":["Others"],"Fundus photography":["Others"],"Laparoscopy":["Others"],"Angiographic imaging":["Others"],"Synthetic/non-medical":["Others"],"Unspecified":["Others"],"Multiple/unspecified":["Others"]},"target":{"Brain tumor":"Brain & Intracranial","White matter hyperintensity":"Brain & Intracranial","Hippocampus":"Brain & Intracranial","Brain lesion":"Brain & Intracranial","Cerebral vessel":"Brain & Intracranial","Multiple sclerosis lesion":"Brain & Intracranial","Brain growth":"Brain & Intracranial","Intracranial hemorrhage":"Brain & Intracranial","Brain anomaly":"Brain & Intracranial","Brain anomaly/white matter lesion":"Brain & Intracranial","Fetal brain structures":"Brain & Intracranial","Brain structures":"Brain & Intracranial","Ischemic stroke lesion":"Brain & Intracranial","Abdominal multi-organ":"Abdominal Organs & Lesions","Kidney tumor":"Abdominal Organs & Lesions","Liver/tumor":"Abdominal Organs & Lesions","Pancreas":"Abdominal Organs & Lesions","Kidney":"Abdominal Organs & Lesions","Liver tumor":"Abdominal Organs & Lesions","Liver":"Abdominal Organs & Lesions","Cirrhotic liver":"Abdominal Organs & Lesions","abdominal organs":"Abdominal Organs & Lesions","Abdominal organs":"Abdominal Organs & Lesions","Abdominal organs/liver lesion":"Abdominal Organs & Lesions","Abdominal/thoracic structures":"Abdominal Organs & Lesions","Gallbladder/lesion":"Abdominal Organs & Lesions","Multi-organ":"Abdominal Organs & Lesions","Multi-organ/anatomical structures":"Abdominal Organs & Lesions","Ureter":"Abdominal Organs & Lesions","Pancreatic lesion":"Abdominal Organs & Lesions","colon cancer":"Abdominal Organs & Lesions","Polyp":"Gastrointestinal Polyps","Polyp/GI lesion":"Gastrointestinal Polyps","Skin lesion":"Skin Lesions","Lung":"Lung & Airway","Lung/COVID-19 lesion":"Lung & Airway","Lung field":"Lung & Airway","COVID-19 lung lesion":"Lung & Airway","Lung nodule":"Lung & Airway","Airway/lung fibrosis":"Lung & Airway","Airway":"Lung & Airway","Lung infection":"Lung & Airway","Lung field/lesion":"Lung & Airway","Lung tumor":"Lung & Airway","Thoracic organs":"Lung & Airway","Thoracic structures/pathology":"Lung & Airway","Optic disc/cup":"Ophthalmic Structures","Retinal vessel":"Ophthalmic Structures","Retinal lesion":"Ophthalmic Structures","Retinal structure":"Ophthalmic Structures","Cell/nuclei":"Histology & Cells","Gland/colorectal histology":"Histology & Cells","Nuclei":"Histology & Cells","Cell":"Histology & Cells","Nuclei/tissue":"Histology & Cells","Colorectal histology":"Histology & Cells","Organelle":"Histology & Cells","Mitochondria":"Histology & Cells","Prostate":"Prostate","Thyroid nodule":"Thyroid Nodules","Breast lesion/tumor":"Breast Lesions","Breast tumor":"Breast Lesions","Invasive breast cancer":"Breast Lesions","Cardiac structures":"Cardiac Structures","Coronary vessel":"Cardiac Structures"}};
+const ROLES = ["Direct generative segmentation","Prediction refinement and correction",
+               "Representation learning and feature enhancement","Data synthesis and augmentation"];
+const MOD_ORDER = ["MRI","CT","Endoscopy","Dermoscopy","Ultrasound","Histopathology/Microscopy","Fundus","X-ray","Others"];
+const TGT_ORDER = ["Brain & Intracranial","Abdominal Organs & Lesions","Gastrointestinal Polyps","Skin Lesions",
+  "Lung & Airway","Ophthalmic Structures","Histology & Cells","Breast Lesions","Cardiac Structures",
+  "Prostate","Thyroid Nodules","Others"];
+
+let papers = [];
+const dsIndex = Object.create(null);
+const state = {q:"", roles:new Set(), mods:new Set(), tgts:new Set(), sort:"date", dir:-1};
+
+async function loadData(path){
+  const response=await fetch(path,{cache:"no-store"});
+  if(!response.ok) throw new Error(path+": HTTP "+response.status);
+  const data=await response.json();
+  if(!Array.isArray(data)) throw new Error(path+": expected a JSON array");
+  return data;
+}
+
+Promise.all([
+  loadData("data/papers.json"),
+  loadData("data/datasets.json")
+]).then(([p,d])=>{
+  papers = p;
+  d.forEach(x=>dsIndex[x.name]=x);
+  d.forEach(x=>(x.aliases||[]).forEach(alias=>{if(!dsIndex[alias]) dsIndex[alias]=x;}));
+  papers.forEach(x=>{
+    x._year = x.date ? String(x.date).slice(0,4) : "";
+    const mods=new Set(), tgts=new Set();
+    (x.datasets||[]).forEach(name=>{
+      const info=dsIndex[name]; if(!info) return;
+      (MAPS.modality[info.modality]||["Others"]).forEach(g=>mods.add(g));
+      tgts.add(MAPS.target[info.target]||"Others");
+    });
+    x._mods=[...mods]; x._tgts=[...tgts];
+    x._hay=[x.model,x.title,x.venue,(x.datasets||[]).join(" "),(x.metrics||[]).join(" ")].join(" ").toLowerCase();
+  });
+  buildFilters(); readHash(); render(); showDatasetDiagnostics(d);
+}).catch(error=>{
+  console.error("Survey loading failed:",error);
+  document.getElementById("view").innerHTML =
+    '<div class="empty"><b>The study index could not load</b>'+esc(error.message)+
+    '<br>Check that data/papers.json and data/datasets.json are available from this server.</div>';
+});
+
+function showDatasetDiagnostics(datasets){
+  if(new URLSearchParams(location.search).get("debug")!=="1") return;
+  const box=document.createElement("pre");
+  box.id="dataset-link-diagnostics";
+  box.style.cssText="white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:#e8f5e9;color:#174d2a;border:1px solid #b7d9bf";
+  const example=dsIndex["Kvasir-SEG"];
+  const sample=document.createElement("div");
+  sample.innerHTML=datasetTags(["Kvasir-SEG"]);
+  const link=sample.querySelector("a");
+  box.textContent=[
+    "Dataset link diagnostics · revision 2",
+    "Page: "+location.href,
+    "Data source: "+new URL("data/datasets.json",location.href).href,
+    "Datasets loaded: "+datasets.length,
+    "Records with a URL: "+datasets.filter(x=>typeof x.url==="string"&&x.url.trim()).length,
+    "Kvasir-SEG URL read: "+(example?JSON.stringify(example.url):"record not found"),
+    "Kvasir-SEG link generated: "+(link?link.href:"NO"),
+    "Dataset links in current results: "+document.querySelectorAll("#view a.tag").length
+  ].join("\n");
+  document.querySelector("main").prepend(box);
+}
+
+function buildFilters(){
+  const add=(host,label,set,roleIndex)=>{
+    const b=document.createElement("button");
+    b.className="chip"; b.type="button"; b.textContent=label.replace(" & "," / ");
+    b.setAttribute("aria-pressed",set.has(label));
+    if(roleIndex!==undefined) b.dataset.role=String(roleIndex);
+    b.onclick=()=>{ set.has(label)?set.delete(label):set.add(label); render(); };
+    host.appendChild(b);
+  };
+  const R=document.getElementById("fRole"); ROLES.forEach((role,i)=>add(R,role,state.roles,i));
+  const M=document.getElementById("fMod"); MOD_ORDER.forEach(m=>add(M,m,state.mods));
+  const T=document.getElementById("fTgt"); TGT_ORDER.forEach(t=>add(T,t,state.tgts));
+  document.getElementById("q").oninput=e=>{state.q=e.target.value.trim().toLowerCase();render();};
+  document.getElementById("clear").onclick=()=>{
+    state.q=""; state.roles.clear(); state.mods.clear(); state.tgts.clear();
+    document.getElementById("q").value=""; render();
+  };
+}
+function match(p){
+  if(state.roles.size && !state.roles.has(p.category)) return false;
+  if(state.q && !p._hay.includes(state.q)) return false;
+  if(state.mods.size && !p._mods.some(m=>state.mods.has(m))) return false;
+  if(state.tgts.size && !p._tgts.some(t=>state.tgts.has(t))) return false;
+  return true;
+}
+function sortRows(rows){
+  const k=state.sort, d=state.dir;
+  return rows.slice().sort((a,b)=>{
+    let x = k==="date" ? (a.date||"") : a[k];
+    let y = k==="date" ? (b.date||"") : b[k];
+    if(x==null) return 1; if(y==null) return -1;
+    if(typeof x==="number" && typeof y==="number") return (x-y)*d;
+    return String(x).localeCompare(String(y))*d;
+  });
+}
+function render(){
+  document.querySelectorAll("#fRole .chip").forEach((b,i)=>b.setAttribute("aria-pressed",state.roles.has(ROLES[i])));
+  document.querySelectorAll("#fMod .chip").forEach((b,i)=>b.setAttribute("aria-pressed",state.mods.has(MOD_ORDER[i])));
+  document.querySelectorAll("#fTgt .chip").forEach((b,i)=>b.setAttribute("aria-pressed",state.tgts.has(TGT_ORDER[i])));
+  const rows=papers.filter(match);
+  const active = state.q || state.roles.size || state.mods.size || state.tgts.size;
+  document.getElementById("status").textContent = active ? rows.length+" studies match" : "";
+  document.getElementById("clear").classList.toggle("hidden", !active);
+  renderTable(sortRows(rows));
+  writeHash();
+}
+function th(label,key,numeric){
+  const on = state.sort===key ? 1 : 0;
+  return '<th'+(numeric?' class="num"':'')+'><button data-sort="'+key+'" data-active="'+on+'">'+
+         label+(on?(state.dir<0?" \u2193":" \u2191"):"")+'</button></th>';
+}
+function renderTable(rows){
+  const host=document.getElementById("view");
+  if(!rows.length){
+    host.innerHTML='<div class="empty"><b>Nothing matches</b>Try a different term, or switch off one of the filters.</div>';
+    return;
+  }
+  let h='<table><thead><tr>'+th("Method","model")+th("Venue","venue")+th("Year","date")+
+        '<th>Role</th>'+th("Params (M)","params_m",1)+th("GFLOPs","gflops",1)+
+        '<th>GPU</th><th>Links</th></tr></thead><tbody>';
+  rows.forEach(p=>{
+    const links=[];
+    if(p.paper_url) links.push('<a href="'+esc(p.paper_url)+'" rel="noopener">paper</a>');
+    if(p.code) links.push('<a href="'+esc(p.code)+'" rel="noopener">code</a>');
+    h+='<tr class="row" data-role="'+ROLES.indexOf(p.category)+'">'+
+       '<td><button class="model" type="button" data-id="'+p.id+'" aria-expanded="false" aria-controls="d-'+p.id+'" title="Click to expand study details">'+esc(p.model)+'</button></td>'+
+       '<td>'+esc(p.venue.split("'")[0])+'</td>'+
+       '<td>'+esc(p._year)+'</td>'+
+       '<td class="role">'+esc(p.category)+'<div class="sub">'+esc(p.subcategory)+'</div></td>'+
+       '<td class="num">'+(p.params_m==null?"\u2013":p.params_m)+'</td>'+
+       '<td class="num">'+(p.gflops==null?"\u2013":p.gflops)+'</td>'+
+       '<td>'+(p.computing?esc(p.computing):"\u2013")+'</td>'+
+       '<td>'+(links.length?links.join(" \u00b7 "):(p.code_available?"code":"\u2013"))+'</td></tr>'+
+       '<tr class="detail hidden" id="d-'+p.id+'"><td colspan="8"><dl class="dl">'+
+         '<dt>Title</dt><dd>'+esc(p.title)+'</dd>'+
+         '<dt>Datasets</dt><dd>'+datasetTags(p.datasets)+'</dd>'+
+         '<dt>Metrics</dt><dd>'+tags(p.metrics)+'</dd>'+
+         '<dt>Framework</dt><dd>'+(p.dimension?esc(p.dimension)+" model":"not recorded")+'</dd>'+
+       '</dl></td></tr>';
+  });
+  host.innerHTML=h+'</tbody></table>';
+  host.querySelectorAll(".model").forEach(b=>b.onclick=()=>{
+    const hidden=document.getElementById("d-"+b.dataset.id).classList.toggle("hidden");
+    b.setAttribute("aria-expanded",String(!hidden));
+    b.title=hidden?"Click to expand study details":"Click to collapse study details";
+  });
+  host.querySelectorAll("th button").forEach(b=>b.onclick=()=>{
+    const k=b.dataset.sort;
+    if(state.sort===k) state.dir*=-1; else {state.sort=k; state.dir=(k==="date"?-1:1);}
+    render();
+  });
+}
+function tags(list){
+  if(!list||!list.length) return '<span class="sub">not recorded</span>';
+  return list.map(v=>'<span class="tag">'+esc(v)+'</span>').join("");
+}
+function datasetTags(list){
+  if(!list||!list.length) return '<span class="sub">not recorded</span>';
+  return list.map(name=>{
+    const raw=dsIndex[name]?.url;
+    let url="";
+    try{
+      const parsed=new URL(typeof raw==="string"?raw.trim():"");
+      if(parsed.protocol==="https:"||parsed.protocol==="http:") url=parsed.href;
+    }catch{}
+    return url
+      ? '<a class="tag" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer" title="Open dataset website (new tab)">'+esc(name)+'</a>'
+      : '<span class="tag">'+esc(name)+'</span>';
+  }).join("");
+}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function writeHash(){
+  const q=new URLSearchParams();
+  if(state.q) q.set("q",state.q);
+  if(state.roles.size) q.set("role",[...state.roles].join("|"));
+  if(state.mods.size) q.set("mod",[...state.mods].join("|"));
+  if(state.tgts.size) q.set("tgt",[...state.tgts].join("|"));
+  history.replaceState(null,"",location.pathname+location.search+(q.toString()?"#"+q:""));
+}
+function readHash(){
+  const q=new URLSearchParams(location.hash.slice(1));
+  state.q=q.get("q")||"";
+  (q.get("role")||"").split("|").filter(v=>ROLES.includes(v)).forEach(v=>state.roles.add(v));
+  document.getElementById("q").value=state.q;
+  (q.get("mod")||"").split("|").filter(Boolean).forEach(v=>state.mods.add(v));
+  (q.get("tgt")||"").split("|").filter(Boolean).forEach(v=>state.tgts.add(v));
+}
+</script>
+</body>
+</html>
