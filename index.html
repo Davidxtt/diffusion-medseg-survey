@@ -73,7 +73,7 @@ th button{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:p
 th button[data-active="1"]{color:var(--ink)}
 td.num{text-align:right;white-space:nowrap}
 th:first-child,td:first-child{text-align:center}
-/* 第一类：浅蓝 */
+/*  */
 #fRole .chip[data-role="0"],
 tr.row[data-role="0"],
 tr.row[data-role="0"] + tr.detail{
@@ -83,7 +83,7 @@ tr.row[data-role="0"] + tr.detail{
   --role-detail:#f0f5fc;
 }
 
-/* 第二类：浅橙 */
+/*  */
 #fRole .chip[data-role="1"],
 tr.row[data-role="1"],
 tr.row[data-role="1"] + tr.detail{
@@ -93,7 +93,7 @@ tr.row[data-role="1"] + tr.detail{
   --role-detail:#fff6ed;
 }
 
-/* 第三类：浅绿 */
+/*  */
 #fRole .chip[data-role="2"],
 tr.row[data-role="2"],
 tr.row[data-role="2"] + tr.detail{
@@ -103,7 +103,7 @@ tr.row[data-role="2"] + tr.detail{
   --role-detail:#f1f8ef;
 }
 
-/* 第四类：浅紫 */
+/*  */
 #fRole .chip[data-role="3"],
 tr.row[data-role="3"],
 tr.row[data-role="3"] + tr.detail{
@@ -242,7 +242,7 @@ footer{border-top:1px solid var(--rule);color:var(--muted);font-size:12.5px;padd
   title  = {The Roles of Diffusion Models in Medical Image Segmentation: A Survey},
   author = {Xie, Tongtong and Yu, Hongshan and Zheng, Yan and He, Yong and Li, Zechuan},
   year   = {2026},
-  note   = {Unpublished manuscript}
+  note   = {Manuscript under review}
 }</pre>
   </section>
 </div>
@@ -291,7 +291,7 @@ Promise.all([
     x._mods=[...mods]; x._tgts=[...tgts];
     x._hay=[x.model,x.title,x.venue,(x.datasets||[]).join(" "),(x.metrics||[]).join(" ")].join(" ").toLowerCase();
   });
-  buildFilters(); readHash(); render(); showDatasetDiagnostics(d);
+  buildFilters(); readHash(); render();
 }).catch(error=>{
   console.error("Survey loading failed:",error);
   document.getElementById("view").innerHTML =
@@ -299,27 +299,6 @@ Promise.all([
     '<br>Check that data/papers.json and data/datasets.json are available from this server.</div>';
 });
 
-function showDatasetDiagnostics(datasets){
-  if(new URLSearchParams(location.search).get("debug")!=="1") return;
-  const box=document.createElement("pre");
-  box.id="dataset-link-diagnostics";
-  box.style.cssText="white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:#e8f5e9;color:#174d2a;border:1px solid #b7d9bf";
-  const example=dsIndex["Kvasir-SEG"];
-  const sample=document.createElement("div");
-  sample.innerHTML=datasetTags(["Kvasir-SEG"]);
-  const link=sample.querySelector("a");
-  box.textContent=[
-    "Dataset link diagnostics · revision 2",
-    "Page: "+location.href,
-    "Data source: "+new URL("data/datasets.json",location.href).href,
-    "Datasets loaded: "+datasets.length,
-    "Records with a URL: "+datasets.filter(x=>typeof x.url==="string"&&x.url.trim()).length,
-    "Kvasir-SEG URL read: "+(example?JSON.stringify(example.url):"record not found"),
-    "Kvasir-SEG link generated: "+(link?link.href:"NO"),
-    "Dataset links in current results: "+document.querySelectorAll("#view a.tag").length
-  ].join("\n");
-  document.querySelector("main").prepend(box);
-}
 
 function buildFilters(){
   const add=(host,label,set,roleIndex)=>{
